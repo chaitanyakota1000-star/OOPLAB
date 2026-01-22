@@ -14,7 +14,7 @@ class A{
 		}
 }
 
-class Hello{
+class data_operators_1{
     public static void main(String args[]){
 	        A obj = new A();
 			int result_add=obj.addition(5,3);
@@ -51,4 +51,5 @@ class Hello{
 				
 			
 			}
+
 	}
