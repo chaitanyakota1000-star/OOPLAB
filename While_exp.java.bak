@@ -1,0 +1,11 @@
+class While_exp{
+   public static void main(args String[]){
+	   int b =0;
+	   
+	   while (b<10){
+		   System.out.println(b);
+		   b++;
+	   }
+	   
+   }
+}
