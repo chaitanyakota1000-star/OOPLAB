@@ -1,0 +1,51 @@
+class caluculator{
+  public int add(int a ,int b){
+	  return a+b;
+  }
+  protected void display(){
+	  System.out.println("display a mes");
+  }
+  private String show(){
+	  return "show message";
+  }
+  public void accessprivate(){
+	  System.out.println("acess private:"+ show());
+  }
+  }
+  
+  class Advancedcaluculator extends caluculator{
+	  @Override
+	   public int add(int a,int b){
+		   return a-b;
+	   }
+	   @Override
+	   public void display(){
+		   System.out.println("display a mess in child class");
+	   }
+	   
+	    private String show(){
+	  return "show message in child class";
+  }
+  @Override
+   public void accessprivate(){
+	  System.out.println("acess private:"+ show());
+  }
+	   
+  }
+  
+  class caluculator2{
+   public static void main(String[] args){
+	  caluculator c1=new caluculator();
+	  System.out.println(c1.add(2,3));
+	  c1.display();
+	  c1.acessprivate();
+	  Advancedcaluculator c2=new Advancedcaluculator();
+	  System.out.println(c2.add(5,3));
+	  c2.display();
+	  c2.accessprivate();
+	  caluculator c3=new Advancedcaluculator();
+	  System.out.println(c3.add(8,5));
+	  c3.display();
+	  c3.accessprivate();
+   } 
+  }
